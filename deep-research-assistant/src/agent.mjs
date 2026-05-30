@@ -171,9 +171,9 @@ export function createIntelligenceDeskAgent() {
       : {}),
   });
 
-  Object.defineProperty(chatModel, "profile", {
-    get: () => ({ maxInputTokens: 8_000 }),
-  });
+  // Object.defineProperty(chatModel, "profile", {
+  //   get: () => ({ maxInputTokens: 8_000 }),
+  // });
 
   return createDeepAgent({
     model: chatModel,
